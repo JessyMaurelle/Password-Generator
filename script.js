@@ -47,8 +47,8 @@ generatorEl.addEventListener('click',()=>{
 
 function generatePassword(length,upper,lower,number,symbol){
     let generatePassword = ''
-    const typesCount = upper+lower+number+symbol
-    const typesArr = [{upper},{lower},{number},{symbol}].filter(item =>Object.values(item)[0])
+    const typesCount = upper+lower+number+symbol;
+    const typesArr = [{upper},{lower},{number},{symbol}].filter(item =>Object.values(item)[0]);
 
 
     if(typesCount===0){
@@ -73,11 +73,11 @@ clipboardEl.addEventListener('click',() =>{
     if(!password){return}
 
     textArea.value = password
-    document.body.appendChild(textArea)
-    textArea.select()
-    document.execCommand('copy')
-    textArea.remove()
-    alert("Password copied to clipboard")
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    textArea.remove();
+    alert("Password copied to clipboard");
 
 })
 
